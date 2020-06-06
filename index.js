@@ -75,7 +75,7 @@ Bot.on('message', message => {
     }
 
     if (message.content.startsWith('t ')) {
-        const search = message.content.replace('t ', '')
+        const search = message.content.replace('t ', '').replace(' ', '%20')
         if (!search) {
             return
         }
