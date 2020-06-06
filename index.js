@@ -75,7 +75,7 @@ Bot.on('message', message => {
     }
 
     if (message.content.startsWith('t ')) {
-        const search = message.content.split(' ')[1]
+        const search = message.content.replace('t ', '')
         if (!search) {
             return
         }
